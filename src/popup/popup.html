@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .button {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #reload-button {
+        background-color: bisque;
+      }
+
+      #clear-button {
+        background-color: aqua;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .buttons > .button:not(:first-child) {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="buttons">
+      <div id="reload-button" class="button">R</div>
+      <div id="clear-button" class="button">C</div>
+    </div>
+    <div>
+      <ul id="content-list"></ul>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
