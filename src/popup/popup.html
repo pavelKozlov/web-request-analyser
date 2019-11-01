@@ -27,6 +27,27 @@
       .buttons > .button:not(:first-child) {
         margin-left: 10px;
       }
+
+      #content-list > li {
+        cursor: pointer;
+      }
+
+      #content-list > li > span {
+        pointer-events: none;
+      }
+
+      #content-list > li.disabled {
+        text-decoration: line-through;
+        color: lightgray;
+      }
+
+      #content-list > li:hover {
+        color: blue;
+      }
+
+      #content-list > li.disabled:hover {
+        color: grey;
+      }
     </style>
   </head>
   <body>
